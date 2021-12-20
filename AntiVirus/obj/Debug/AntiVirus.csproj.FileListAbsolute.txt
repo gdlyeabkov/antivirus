@@ -1,0 +1,16 @@
+C:\wpf_projects\AntiVirus\AntiVirus\bin\Debug\AntiVirus.exe.config
+C:\wpf_projects\AntiVirus\AntiVirus\bin\Debug\AntiVirus.exe
+C:\wpf_projects\AntiVirus\AntiVirus\bin\Debug\AntiVirus.pdb
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.AssemblyReference.cache
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.SuggestedBindingRedirects.cache
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\MainWindow.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\App.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus_MarkupCompile.cache
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus_MarkupCompile.lref
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\MainWindow.baml
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.g.resources
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.Properties.Resources.resources
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.GenerateResource.cache
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.CoreCompileInputs.cache
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.exe
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.pdb
