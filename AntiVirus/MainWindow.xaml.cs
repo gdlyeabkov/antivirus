@@ -151,5 +151,15 @@ namespace AntiVirus
 
             }
         }
+
+        private void CloseProgrammHandler(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ToggleProgrammHandler(object sender, MouseButtonEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
