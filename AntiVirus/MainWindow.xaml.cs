@@ -37,6 +37,8 @@ namespace AntiVirus
 
             asideTabs.SelectedIndex = ((StackPanel)(currentTab.Parent)).Children.IndexOf(currentTab);
 
+            capabilities.SelectedIndex = ((StackPanel)(currentTab.Parent)).Children.IndexOf(currentTab);
+
         }
 
         private void GetSecurityReport(object sender, MouseButtonEventArgs e)

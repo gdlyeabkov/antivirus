@@ -161,48 +161,130 @@
                         <TextBlock Text="●" Foreground="DeepSkyBlue" FontSize="18" Margin="5, 0, 5, 0" MouseUp="ActivateTabHandler" DataContext="1" />
                         <TextBlock Text="●" Foreground="Gray" FontSize="18" Margin="5, 0, 5, 0" MouseUp="ActivateTabHandler" DataContext="2" />
                     </StackPanel>
-                    <StackPanel Margin="0, 25, 0, 25" Orientation="Horizontal">
-                        <StackPanel Background="White" Margin="15, 0, 15, 0">
-                            <StackPanel Margin="15" Orientation="Horizontal">
-                                <TextBlock FontSize="14" Foreground="Gray" Text="Какие компоненты защищаются в данный момент" />
-                                <TextBlock FontSize="18" Foreground="Red" Margin="50, 0, 0, 0" Text="⚠" />
-                            </StackPanel>
-                            <StackPanel Margin="15" Orientation="Horizontal">
-                                <TextBlock Margin="0, 0, 50, 0" FontSize="36" Text="0" />
-                                <StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
-                                        <TextBlock FontSize="18" Foreground="Gray" Text="Приложения" />
+                    <TabControl x:Name="capabilities" Background="Transparent" BorderThickness="0">
+                        <TabItem Header="0" Visibility="Hidden">
+                            <StackPanel Margin="0, 25, 0, 25" Orientation="Horizontal">
+                                <StackPanel Background="White" Margin="15, 0, 15, 0">
+                                    <StackPanel Margin="15" Orientation="Horizontal">
+                                        <TextBlock FontSize="14" Foreground="Gray" Text="Какие компоненты защищаются в данный момент" />
+                                        <TextBlock FontSize="18" Foreground="Red" Margin="50, 0, 0, 0" Text="⚠" />
                                     </StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
-                                        <TextBlock FontSize="18" Foreground="Gray" Text="Интернет соединения" />
+                                    <StackPanel Margin="15" Orientation="Horizontal">
+                                        <TextBlock Margin="0, 0, 50, 0" FontSize="36" Text="0" />
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
+                                                <TextBlock FontSize="18" Foreground="Gray" Text="Приложения" />
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
+                                                <TextBlock FontSize="18" Foreground="Gray" Text="Интернет соединения" />
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
+                                                <TextBlock FontSize="18" Foreground="Gray" Text="Другие компоненты ПК" />
+                                            </StackPanel>
+                                        </StackPanel>
                                     </StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="❌" />
-                                        <TextBlock FontSize="18" Foreground="Gray" Text="Другие компоненты ПК" />
+                                </StackPanel>
+                                <StackPanel x:Name="notifications" Background="White" Margin="15, 0, 15, 0">
+                                    <StackPanel Margin="15" Orientation="Horizontal">
+                                        <TextBlock FontSize="14" Foreground="Gray" Text="Отчет о безопасности за 10 дн." />
+                                        <StackPanel x:Name="breadcrumbs" Orientation="Horizontal">
+                                            <TextBlock FontSize="18" Foreground="Gray" Margin="50, 0, 15, 0" Text="🢐" MouseUp="GetSecurityReport" DataContext="1" />
+                                            <TextBlock x:Name="breadcrumb" FontSize="18" Margin="15, 0, 15, 0" Text="1/2" />
+                                            <TextBlock FontSize="18" Foreground="Blue" Margin="15, 0, 15, 0" Text="🢒" MouseUp="GetSecurityReport" DataContext="2" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Margin="15" Orientation="Horizontal" Width="500">
+                                        <TextBlock Margin="0, 0, 50, 0" FontSize="36" Text="⚠" />
+                                        <StackPanel>
+                                            <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="4" />
+                                            <TextBlock FontSize="18" Foreground="Gray" Text="Небезопасные веб сайты заблокированы" />
+                                        </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
-                        </StackPanel>
-                        <StackPanel x:Name="notifications" Background="White" Margin="15, 0, 15, 0">
-                            <StackPanel Margin="15" Orientation="Horizontal">
-                                <TextBlock FontSize="14" Foreground="Gray" Text="Отчет о безопасности за 10 дн." />
-                                <StackPanel x:Name="breadcrumbs" Orientation="Horizontal">
-                                    <TextBlock FontSize="18" Foreground="Gray" Margin="50, 0, 15, 0" Text="🢐" MouseUp="GetSecurityReport" DataContext="1" />
-                                    <TextBlock x:Name="breadcrumb" FontSize="18" Margin="15, 0, 15, 0" Text="1/2" />
-                                    <TextBlock FontSize="18" Foreground="Blue" Margin="15, 0, 15, 0" Text="🢒" MouseUp="GetSecurityReport" DataContext="2" />
+                        </TabItem>
+                        <TabItem Header="1" Visibility="Hidden">
+                            <StackPanel Margin="0, 25, 0, 25" Orientation="Horizontal">
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🔍" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Проверить на" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="наличие вирусов" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🗘" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Обновить" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="приложения" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🗘" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Обновить это" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="приложение" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="🔒" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Обеспечить" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="защиту в" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Интернете" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🧹" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Удалить файлы" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="cookie и трекеры" />
                                 </StackPanel>
                             </StackPanel>
-                            <StackPanel Margin="15" Orientation="Horizontal" Width="500">
-                                <TextBlock Margin="0, 0, 50, 0" FontSize="36" Text="⚠" />
-                                <StackPanel>
-                                    <TextBlock FontSize="18" Foreground="Gray" Margin="0, 0, 15, 0" Text="4" />
-                                    <TextBlock FontSize="18" Foreground="Gray" Text="Небезопасные веб сайты заблокированы" />
+                        </TabItem>
+                        <TabItem Header="2" Visibility="Hidden">
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel Width="350" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🛡" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Уничтожить нежелательные" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="файлы" />
+                                </StackPanel>
+                                <StackPanel Width="350" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="🛈" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Управление паролями" />
+                                </StackPanel>
+                                <StackPanel Width="350" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="❓" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Блокировать личные файлы" />
                                 </StackPanel>
                             </StackPanel>
-                        </StackPanel>
-                    </StackPanel>
+                        </TabItem>
+                        <TabItem Header="3" Visibility="Hidden">
+                            <StackPanel Margin="0, 25, 0, 25" Orientation="Horizontal">
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="👤" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Перейти на" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="страницу Моя" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="учетная запись" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🌐" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Обеспечить" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="защиту домашней" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="сети" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🛡" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Открыть журнал" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="безопасности" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="🛈" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="О программе" />
+                                </StackPanel>
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="❓" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Получение" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="справки и" />
+                                    <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="поддержки" />
+                                </StackPanel>
+                            </StackPanel>
+                        </TabItem>
+                    </TabControl>
                 </StackPanel>
 
                 <StackPanel VerticalAlignment="Center" MouseUp="ToggleTabHandler" DataContext="2">
