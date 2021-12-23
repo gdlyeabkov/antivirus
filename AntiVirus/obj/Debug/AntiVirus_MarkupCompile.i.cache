@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\wpf_projects\AntiVirus\AntiVirus\App.xaml
-1219584333
+2-2107087585
 
-6-502434485
+72007838789
 13-1310406943
-MainWindow.xaml;
+Dialogs\AccountDetailsDialog.xaml;MainWindow.xaml;
 
 True
 

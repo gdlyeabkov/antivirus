@@ -37,10 +37,10 @@
                     <TextBlock Margin="0, 10, 0, 10"  Text="Личные сведения" FontSize="18" Foreground="Gray" />
                 </Border>
             </StackPanel>
-            <StackPanel Margin="275, 0, 0, 0" Orientation="Horizontal">
-                <TextBlock Text="🔔" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
-                <TextBlock Text="💡" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
-                <TextBlock Text="⚙" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
+            <StackPanel x:Name="headerIcons" Margin="275, 0, 0, 0" Orientation="Horizontal">
+                <TextBlock MouseEnter="HoverHeaderIconHandler" MouseLeave="HoutHeaderIconHandler" Text="🔔" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
+                <TextBlock MouseEnter="HoverHeaderIconHandler" MouseLeave="HoutHeaderIconHandler" Text="💡" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
+                <TextBlock MouseEnter="HoverHeaderIconHandler" MouseLeave="HoutHeaderIconHandler" Text="⚙" FontSize="18" Margin="25, 10, 25, 10" Foreground="Gray" />
             </StackPanel>
         </StackPanel>
         <StackPanel Background="LightGray" Orientation="Horizontal">

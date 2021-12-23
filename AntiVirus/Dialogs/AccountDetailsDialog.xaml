@@ -1,0 +1,53 @@
+﻿<Window x:Class="AntiVirus.Dialogs.AccountDetailsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AntiVirus.Dialogs"
+        mc:Ignorable="d"
+        Title="Сведения об учетной записи McAffee" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="50">
+            <Image Height="35" Margin="10, 0">
+                <Image.Source>
+                    <BitmapImage UriSource="https://static.timesofisrael.com/www/uploads/2021/01/Mcafee-e1610462203518.jpg" />
+                </Image.Source>
+            </Image>
+            <TextBlock Text="Сведения об учетной записи McAffee" Foreground="Red" Margin="10, 15" />
+            <StackPanel Margin="350, 0, 0, 0" Orientation="Horizontal">
+                <TextBlock Text="-" FontSize="56" Margin="10, 0, 10, 10" VerticalAlignment="Center" Foreground="Gray" MouseUp="CloseProgrammHandler" />
+                <TextBlock Text="❌" FontSize="24" Margin="10, 0, 10, 0" VerticalAlignment="Center" Foreground="Gray" MouseUp="ToggleProgrammHandler" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom" Height="35" Orientation="Horizontal">
+            <Button Content="Назад" MouseUp="CloseProgrammHandler" Margin="25, 0, 0, 0" Background="Gray" Height="30" Foreground="White" Width="125" />
+            <Button Content="Продолжить" Margin="500, 0, 0, 0" Background="Gray" Height="30" Foreground="White" Width="125" />
+        </StackPanel>
+        <StackPanel Background="AliceBlue">
+            <StackPanel Margin="20, 5, 0, 5" Orientation="Horizontal">
+                <!--
+                <Button Content=">" Width="40" Height="50" Foreground="White" FontWeight="ExtraBlack" FontSize="48" Background="LightGreen" />
+                -->
+                <TextBlock FontSize="36" Text="✅" Foreground="LightGreen" />
+                <TextBlock Margin="15, 0, 0, 0" FontSize="18" VerticalAlignment="Center" Text="Это устройство защищено - защитите другие устройства." Foreground="LightGreen" />
+            </StackPanel>
+            <TextBlock Margin="20, 5, 0, 5" Text="Ваш компьютер защищен с помощью McAffee." />
+            <TextBlock Margin="20, 5, 0, 5" Text="Введите адресс электронной почты и завершите регистрацию пользователя." />
+            <TextBlock Margin="20, 5, 0, 5" Text="После регистрации вы сможете проверять состояние своих подписок, управлять продуктами и защищать" />
+            <TextBlock Margin="20, 5, 0, 5" Text="другие устройства." />
+            <StackPanel Margin="0, 10" Orientation="Horizontal">
+                <Image Margin="50, 0, 0, 0" Width="100" Height="100">
+                    <Image.Source>
+                        <BitmapImage UriSource="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/McAfee_logo.png/300px-McAfee_logo.png" />
+                    </Image.Source>
+                </Image>
+                <StackPanel Margin="50, 0, 0 , 0">
+                    <TextBlock Margin="0, 5" FontSize="14" Text="Электронная почта" />
+                    <TextBox Height="25" Width="175" />
+                </StackPanel>
+            </StackPanel>
+            <TextBlock Margin="20, 5, 0, 5" Text="Мы ценим вашу конфиденциальность. Изучите наше Уведомление о конфиденциальности, чтобы узнать" />
+            <TextBlock Margin="20, 5, 0, 5" Text="как McAffee может использовать вашу личную информацию." />
+        </StackPanel>
+    </DockPanel>
+</Window>

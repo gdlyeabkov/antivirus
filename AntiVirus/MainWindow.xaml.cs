@@ -161,5 +161,19 @@ namespace AntiVirus
         {
             this.Hide();
         }
+
+        private void HoverHeaderIconHandler(object sender, MouseEventArgs e)
+        {
+            TextBlock headerIcon = ((TextBlock)(sender));
+            headerIcon.Foreground = Brushes.Black;
+        }
+
+        private void HoutHeaderIconHandler(object sender, MouseEventArgs e)
+        {
+            foreach (TextBlock headerIcon in headerIcons.Children)
+            {
+                headerIcon.Foreground = Brushes.Gray;
+            }
+        }
     }
 }
