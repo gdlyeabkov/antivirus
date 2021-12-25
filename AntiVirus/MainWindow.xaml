@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AntiVirus"
         mc:Ignorable="d"
-        Closing="SearchVirusesHandler" WindowStyle="None" WindowState="Normal" Title="Антивирус" Height="650" Width="1000"  DragOver="DragWindowHandler">
+        ShowInTaskbar="True" Icon="C:\wpf_projects\AntiVirus\AntiVirus\Assets\application_icon.ico" Closing="SearchVirusesHandler" WindowStyle="None" WindowState="Normal" Title="Антивирус" Height="650" Width="1000"  DragOver="DragWindowHandler">
     <DockPanel>
         <DockPanel DockPanel.Dock="Top" Height="50">
             <Image Height="50">

@@ -27,7 +27,7 @@ namespace AntiVirus
 
         public BackgroundWorker worker;
         public SpeechSynthesizer debugger;
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -39,6 +39,12 @@ namespace AntiVirus
             {
                 SearchViruses();
             };
+
+            System.Windows.Forms.NotifyIcon nIcon = new System.Windows.Forms.NotifyIcon();
+            nIcon.Icon = new System.Drawing.Icon(@"C:\wpf_projects\AntiVirus\AntiVirus\Assets\application_icon.ico");
+            nIcon.Visible = true;
+            string nIconTitle = "Антивирус";
+            nIcon.Text = nIconTitle;
 
         }
 
