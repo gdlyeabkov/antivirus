@@ -270,28 +270,28 @@
                         </TabItem>
                         <TabItem Header="3" Visibility="Hidden">
                             <StackPanel Margin="0, 25, 0, 25" Orientation="Horizontal">
-                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0" MouseUp="GoToMyAccountHandler">
                                     <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="👤" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Перейти на" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="страницу Моя" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="учетная запись" />
                                 </StackPanel>
-                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                <StackPanel Width="215" Background="DarkGray" Margin="8, 0, 8, 0">
                                     <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🌐" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Обеспечить" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="защиту домашней" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="сети" />
                                 </StackPanel>
-                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                <StackPanel Width="215" Background="White" MouseUp="GoToSecurityLogHandler" Margin="8, 0, 8, 0">
                                     <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="🛡" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Открыть журнал" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="безопасности" />
                                 </StackPanel>
-                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0" MouseUp="GoToAboutHandler">
                                     <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Blue" Text="🛈" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="О программе" />
                                 </StackPanel>
-                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0">
+                                <StackPanel Width="215" Background="White" Margin="8, 0, 8, 0" MouseUp="GoToHelpHandler">
                                     <TextBlock HorizontalAlignment="Center" FontSize="28" Foreground="Gray" Text="❓" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="Получение" />
                                     <TextBlock HorizontalAlignment="Center" FontSize="18" Foreground="Gray" Margin="0, 5, 0, 5" Text="справки и" />

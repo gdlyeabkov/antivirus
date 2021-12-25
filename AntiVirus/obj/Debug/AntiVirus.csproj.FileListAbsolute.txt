@@ -14,3 +14,11 @@ C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.GenerateResource.
 C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.csproj.CoreCompileInputs.cache
 C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.exe
 C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\AntiVirus.pdb
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\AccountDetailsDialog.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\AccountDetailsDialog.baml
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\AboutDialog.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\HelpDialog.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\SecurityLog.g.cs
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\AboutDialog.baml
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\HelpDialog.baml
+C:\wpf_projects\AntiVirus\AntiVirus\obj\Debug\Dialogs\SecurityLog.baml

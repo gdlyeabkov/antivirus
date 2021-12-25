@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace AntiVirus.Dialogs
 {
     /// <summary>
-    /// Логика взаимодействия для AccountDetailsDialog.xaml
+    /// Логика взаимодействия для HelpDialog.xaml
     /// </summary>
-    public partial class AccountDetailsDialog : Window
+    public partial class HelpDialog : Window
     {
-        public AccountDetailsDialog()
+        public HelpDialog()
         {
             InitializeComponent();
         }
@@ -38,6 +38,6 @@ namespace AntiVirus.Dialogs
         {
             this.Close();
         }
-    }
 
+    }
 }

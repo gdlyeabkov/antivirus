@@ -175,5 +175,30 @@ namespace AntiVirus
                 headerIcon.Foreground = Brushes.Gray;
             }
         }
+
+        private void GoToMyAccountHandler(object sender, MouseButtonEventArgs e)
+        {
+            Dialogs.AccountDetailsDialog dialog = new Dialogs.AccountDetailsDialog();
+            dialog.Show();
+        }
+
+        private void GoToAboutHandler(object sender, MouseButtonEventArgs e)
+        {
+            Dialogs.AboutDialog dialog = new Dialogs.AboutDialog();
+            dialog.Show();
+        }
+
+        private void GoToHelpHandler(object sender, MouseButtonEventArgs e)
+        {
+            Dialogs.HelpDialog dialog = new Dialogs.HelpDialog();
+            dialog.Show();
+        }
+
+        private void GoToSecurityLogHandler(object sender, MouseButtonEventArgs e)
+        {
+            Dialogs.SecurityLog dialog = new Dialogs.SecurityLog();
+            dialog.Show();
+        }
+
     }
 }

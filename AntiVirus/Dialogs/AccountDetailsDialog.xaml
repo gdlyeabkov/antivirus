@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AntiVirus.Dialogs"
         mc:Ignorable="d"
-        Title="Сведения об учетной записи McAffee" Height="450" Width="800">
+        WindowStyle="None" Title="Сведения об учетной записи McAffee" Height="450" Width="800">
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="50">
             <Image Height="35" Margin="10, 0">
@@ -20,7 +20,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel DockPanel.Dock="Bottom" Height="35" Orientation="Horizontal">
-            <Button Content="Назад" MouseUp="CloseProgrammHandler" Margin="25, 0, 0, 0" Background="Gray" Height="30" Foreground="White" Width="125" />
+            <Button Content="Назад" Click="CancelHandler" Margin="25, 0, 0, 0" Background="Gray" Height="30" Foreground="White" Width="125" />
             <Button Content="Продолжить" Margin="500, 0, 0, 0" Background="Gray" Height="30" Foreground="White" Width="125" />
         </StackPanel>
         <StackPanel Background="AliceBlue">

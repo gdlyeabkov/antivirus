@@ -1,0 +1,223 @@
+﻿<Window x:Class="AntiVirus.Dialogs.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AntiVirus.Dialogs"
+        mc:Ignorable="d"
+        WindowStyle="None" Title="Сведения об учетной записи McAffee" Height="850" Width="800">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="50">
+            <Image Height="35" Margin="10, 0">
+                <Image.Source>
+                    <BitmapImage UriSource="https://static.timesofisrael.com/www/uploads/2021/01/Mcafee-e1610462203518.jpg" />
+                </Image.Source>
+            </Image>
+            <TextBlock Text="Сведения об учетной записи McAffee" Foreground="Red" Margin="10, 15" />
+            <StackPanel Margin="350, 0, 0, 0" Orientation="Horizontal">
+                <TextBlock Text="-" FontSize="56" Margin="10, 0, 10, 10" VerticalAlignment="Center" Foreground="Gray" MouseUp="CloseProgrammHandler" />
+                <TextBlock Text="❌" FontSize="24" Margin="10, 0, 10, 0" VerticalAlignment="Center" Foreground="Gray" MouseUp="ToggleProgrammHandler" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Background="AliceBlue">
+            <Border BorderThickness="0, 0, 0, 1" BorderBrush="Gray">
+                <StackPanel Margin="20, 25, 0, 25" Orientation="Horizontal">
+                    <Border>
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                            <TextBlock Text="🢨" Foreground="CornflowerBlue" FontWeight="ExtraBlack" />
+                            <TextBlock Margin="10, 0" MouseUp="CloseProgrammHandler" Text="Домашняя страница" Foreground="CornflowerBlue" FontWeight="ExtraBlack" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Margin="150, 0, 0, 0" FontSize="18" VerticalAlignment="Center" Text="О программе" Foreground="Black" />
+                </StackPanel>
+            </Border>
+            <TextBlock FontSize="18" Margin="20, 25, 0, 25" Text="О программе McAfee LiveSafe" />
+            <Border Margin="50, 0" BorderThickness="1" BorderBrush="Gray">
+                <ScrollViewer>
+                    <StackPanel Height="350" Background="White">
+                        <StackPanel>
+                            <TextBlock Text="McAfee LifeSafe" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="16.0" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Имя выпуска:" FontWeight="Black" />
+                                <TextBlock Text="16.0 R28   " Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="Компоненты" FontSize="18" Margin="15" FontWeight="ExtraBlack" />
+                            <Border Margin="15, 0" BorderThickness="0, 0, 0, 1" BorderBrush="Gray" />
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <TextBlock Text="McAfee SecurityCenter" FontSize="18" Margin="15" />
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="AffId:" FontWeight="Black" />
+                                <TextBlock Text="1357-57" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Версия:" FontWeight="Black" />
+                                <TextBlock Text="18.8" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Последнее обновление:" FontWeight="Black" />
+                                <TextBlock Text="31.07.2021" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Сборка:" FontWeight="Black" />
+                                <TextBlock Text="18.8.126" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="15, 5">
+                                <TextBlock Text="Язык:" FontWeight="Black" />
+                                <TextBlock Text="ru" Margin="8, 0, 0, 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            <Border Margin="50, 50" BorderThickness="1" BorderBrush="Gray">
+                <ScrollViewer>
+                    <StackPanel Height="215" Background="White">
+                        <StackPanel Orientation="Horizontal" Margin="15, 15, 0, -5">
+                            <TextBlock Text="Аттрибуты товарных знаков" Margin="0" FontWeight="ExtraBlack" />
+                            <TextBlock Text="AVERT, EPO, EPOLICY ORCHESTRATOR, FLASHBOX, FOUNDSTONE, GROUPSHIELD, HERCULES, INTRUSHIELD, INTRUSION" Margin="5, 0, 0, 0" />
+                        </StackPanel>
+                        <TextBlock Text="INTELLIEGENCE, LINUXSHIELD, MANAGED MAIL PROTECTION, MAX (MCAFEE SECURITYALLIENCE EXCHANGE), MCAFEE, MCAFEE.COM, NETSHIELD," Margin="15, 15, 0, -10" />
+                        <TextBlock Text="PORTALSHIELD, PREVENTSYS, PROTECTION-IN-DEPTH STRATEGY, PROTECTIONPILOT, SECURE MESSAGING SERVICE, SECURITY ALLIENCE, SITEADVISOR," Margin="15, 15, 0, -10" />
+                        <TextBlock Text="THREATSCAN, TOTAL PROTECTION, VIREXVIRUSSCAN" Margin="15, 15, 0, 0" />
+                        <StackPanel Orientation="Horizontal" Margin="15, 15, 0, -5">
+                            <TextBlock Text="Авторское право McAfee, LLC, 2020 г. Все права защищены." Margin="0" FontWeight="ExtraBlack" />
+                            <TextBlock Text="McAfee и другие указанные здесь товарные знаки являются зарегестрированными" Margin="5, 0, 0, 0" />
+                        </StackPanel>
+                        <TextBlock Text="товарными знаками корпорации McAfee, LLC, и (или) ее дочерних корпораций в США и (или) других странах. Красный знак McAfee в связи с" Margin="15, 15, 0, -10" />
+                        <TextBlock Text="безопасностью является отличительной особенностью фирменных продуктов McAfee. Другие товарные знаки и фирменная символиака могут быти" Margin="15, 15, 0, -10" />
+                        <TextBlock Text="заявлены как объекты собственности третьих лиц." Margin="15, 15, 0, 0" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </StackPanel>
+    </DockPanel>
+</Window>
