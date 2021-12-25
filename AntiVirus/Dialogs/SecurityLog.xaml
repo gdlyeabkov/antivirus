@@ -34,13 +34,13 @@
             <TextBlock FontSize="18" Margin="20, 25, 0, 25" Text="Просмотрите журналы действий на вашем ПК и узнайте результаты защиты McAfee. Узнайте больше" />
             <StackPanel Margin="50, 35" Orientation="Horizontal">
                 <TextBlock Margin="10, 0"  Text="Показать:" />
-                <ComboBox Margin="10, 0" Width="200" SelectedIndex="0">
+                <ComboBox x:Name="logsType" Margin="10, 0" Width="200" SelectedIndex="0">
                     <ComboBoxItem Content="Все" />
                     <ComboBoxItem Content="Деятельность по обновлению нежелательной почты" />
                     <ComboBoxItem Content="Входящие соединения заблокированы" />
                 </ComboBox>
                 <TextBlock Margin="10, 0" Text="Для: " />
-                <ComboBox Margin="10, 0" Width="200" SelectedIndex="3">
+                <ComboBox x:Name="logsDate" Margin="10, 0" Width="200" SelectedIndex="3">
                     <ComboBoxItem Content="Последние 24 часа" />
                     <ComboBoxItem Content="Последние 7 дней" />
                     <ComboBoxItem Content="Последние 30 дней" />
@@ -49,17 +49,17 @@
                 </ComboBox>
             </StackPanel>
             <ScrollViewer Margin="25, 0" Height="250">
-                <Grid>
+                <Grid x:Name="securityLogs">
                     <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
@@ -78,6 +78,7 @@
                         </StackPanel>
                     </Border>
 
+                    <!--
                     <Border Grid.Row="1" Grid.Column="0" Background="White" BorderThickness="1" BorderBrush="Gray">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock Text=">" FontWeight="ExtraBlack" FontSize="28" />
@@ -189,7 +190,7 @@
                             <TextBlock Text="20:28:16" Foreground="Gray" FontWeight="Normal" FontSize="12" />
                         </StackPanel>
                     </Border>
-
+                    -->
                     <Border Grid.Row="8" Grid.Column="0" Background="LightGray" BorderThickness="1" BorderBrush="Gray">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock Text="Показать 1-7 из 7" FontWeight="Normal" FontSize="12" />
@@ -197,14 +198,17 @@
                         </StackPanel>
                     </Border>
                     <Border Grid.Row="8" Grid.Column="1" Background="LightGray" BorderThickness="1" BorderBrush="Gray">
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <Button Content="Назад" IsEnabled="False" Width="75" Margin="10, 0" />
                             <Button Content="Далее" IsEnabled="False" Width="75" Margin="10, 0"/>
                         </StackPanel>
                     </Border>
                 </Grid>
             </ScrollViewer>
-            
+            <TextBlock Text="asd" x:Name="debug"
+                       
+            />
+            <!-- MouseUp="GetLogsHandler" -->
         </StackPanel>
     </DockPanel>
 </Window>
